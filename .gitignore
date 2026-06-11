@@ -1,0 +1,46 @@
+# Local/private implementation
+backend/
+frontend/
+scripts/
+book/
+private/
+internal/
+research/
+
+# Secrets and local configuration
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*secret*
+*token*
+*credential*
+connectors.json
+decisions.json
+*.db
+*.sqlite
+*.sqlite3
+docker-compose*.yml
+
+# Build, dependency, and cache output
+node_modules/
+dist/
+build/
+coverage/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Logs and editor files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

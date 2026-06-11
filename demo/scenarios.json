@@ -1,0 +1,37 @@
+[
+  {
+    "id": "validator-quorum-anomaly",
+    "category": "consensus-integrity",
+    "public_signal": "Unusual approval pattern for a bridge action.",
+    "demo_decision": "review",
+    "safe_operator_action": "Pause automated acceptance and request manual validation."
+  },
+  {
+    "id": "message-replay-pattern",
+    "category": "message-integrity",
+    "public_signal": "Transfer-like message resembles a previously reviewed intent.",
+    "demo_decision": "block",
+    "safe_operator_action": "Quarantine the event until replay status is resolved."
+  },
+  {
+    "id": "liquidity-drain-velocity",
+    "category": "value-flow-risk",
+    "public_signal": "Outbound value increases faster than the expected public demo profile.",
+    "demo_decision": "review",
+    "safe_operator_action": "Escalate to bridge operations before continuing the route."
+  },
+  {
+    "id": "contract-upgrade-drift",
+    "category": "runtime-change-risk",
+    "public_signal": "Observed behavior changes after an upgrade-related event.",
+    "demo_decision": "review",
+    "safe_operator_action": "Verify governance approval and expected runtime invariants."
+  },
+  {
+    "id": "connector-health-degradation",
+    "category": "data-quality-risk",
+    "public_signal": "A monitoring source appears stale or inconsistent with peer sources.",
+    "demo_decision": "review",
+    "safe_operator_action": "Reduce automation confidence and use a safer review path."
+  }
+]
